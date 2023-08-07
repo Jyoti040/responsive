@@ -1,0 +1,239 @@
+<!doctype html>
+<html> 
+ <head> 
+  <title>
+     Registration Form
+ </title> 
+ <style type="text/css" id="dcoder_stylesheet">.heading {
+    font-size: 35px;
+    font-weight:bold;
+    text-align: center ;
+    margin-bottom:28px;
+    margin-top:20px;
+}
+
+*{
+    box-sizing: border-box ;
+}
+legend{
+    font-size:20px;
+}
+input[type="text"]{
+    width:250px;
+    height:40px;
+    margin-top:5px;
+    font-size:15px;
+}
+label, .sec1{ 
+    font-size:16px;
+}
+input[type="date"]{
+    width:250px;
+    height:40px;
+    margin-top:5px;
+    font-size:15px;
+}
+.name{
+    margin-top:10px;
+    padding:10px;
+}
+input[placeholder]{
+    color: #638999;
+}
+
+.gender{
+    margin-top:2px;
+}
+
+.gs{
+    margin-top:8px;
+}
+input[type="number"]{
+    width:250px;
+    height:40px;
+    margin-top:5px;
+    font-size:15px;
+}
+textarea{
+    width:250px;
+    height:100px;
+    margin-top:5px;
+    font-size:15px;
+}
+.buttonbox{
+    display:flex;
+    flex-direction:column;
+    margin-top:20px;
+    
+    align-items:center ;
+
+}
+fieldset{
+  margin : 10px;
+}
+
+.button {
+  background-color: #1b9bc4;
+  border: 2px solid #1b9bc4;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  margin: 5px 6px;
+  cursor: pointer;
+  border-radius:4px;
+  
+}
+form{
+    background-color: #f2f2f2;
+    }
+
+@media screen and (min-width: 600px) {
+
+/* .part1, part2, input[type=submit] ,input[type=reset]{
+    width: 100%;
+    margin-top: 0;
+  }
+ */
+   .part1 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.part2 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+   input[type="text"] ,textarea,input[type="number"]{
+     resize : vertical;
+   }
+   .row:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+.email:after{
+  
+  content: " ";
+  display: table;
+  clear: both;
+}
+.phone:after
+{
+  content: " ";
+  display: table;
+  clear: both;
+}
+ .address:after{
+   content: " ";
+  display: table;
+  clear: both;
+ }
+   
+}</style></head> 
+ <body> 
+  <div class="heading"> 
+   <header class="text1">
+     Registration Form 
+   </header> 
+  </div> 
+  <form> 
+   <fieldset> <legend class="group1"> Personal Information</legend> 
+    <div class="Name"> 
+     <div class="row"> <label class="part1" for="fname">Full name: </label> 
+      <br> 
+      <input type="text" id="fname" class="part2" placeholder="Enter your full name "> 
+     </div> 
+     <br> 
+     <br> 
+     <div class="row"> <label class="part1" for="fname">Mother's name: </label> 
+      <br> 
+      <input type="text" id="fname" class="part2" placeholder="Enter your mother's name "> 
+     </div> 
+     <br> 
+     <br> 
+     <div class="row"> <label class="part1" for="fname">Father's name: </label> 
+      <br> 
+      <input type="text" id="fname" class="part2" placeholder="Enter your father's name "> 
+     </div> 
+     <br> 
+     <br> 
+     <div class="row"> <label class="part1" for="dob1"> Date of Birth:</label> 
+      <br> 
+      <input id="dob1" type="date" placeholder="yy--mm-dd" class="part2"> 
+     </div> 
+     <br> 
+     <br> 
+     <div class="row"> 
+      <div class="gender"> 
+       <p>Gender:</p> 
+       <div class="gs"> 
+        <input type="radio" id="male" name="gender1" value="Male"> <label for="male">Male</label> 
+        <br> 
+        <input type="radio" id="female" name="gender1" value="Female"> <label for="female">Female</label> 
+        <br> 
+        <input type="radio" id="other" name="gender1" value="Other"> <label for="other">Prefer not to say</label> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+   </fieldset> 
+   <br> 
+   <br> 
+   <fieldset> <legend class="group2">Contact Information</legend> 
+    <div class="phone"> <label class="part1" for="phone1">Phone Number:</label> 
+     <br> 
+     <input type="number" id="phone1" class="part2" name="p1" placeholder="Enter your phone number" max="10"> 
+    </div> 
+    <br> 
+    <br> 
+    <div class="email"> <label class="part1" for="text1">Email Address:</label> 
+     <br> 
+     <input type="text" id="text1" name="t1" class="part2" placeholder="Enter your email here"> 
+    </div> 
+    <br> 
+    <br> 
+    <div class="address"> <label class="part1" for="add1">Address:</label> 
+     <br> <textarea id="name" rows="5" class="part2" placeholder="Enter your address" cols="25"></textarea> 
+    </div> 
+   </fieldset> 
+   <br> 
+   <br> 
+   <fieldset> <legend>Other Information</legend> 
+    <div class="branch"> 
+     <p>Branch:</p> 
+     <input type="radio" id="cse" name="branch1" value="CSE"> <label for="cse">CSE</label> 
+     <br> 
+     <input type="radio" id="it" name="branch1" value="IT"> <label for="it">IT</label> 
+     <br> 
+     <input type="radio" id="ece" name="branch1" value="ECE"> <label for="ece">ECE</label> 
+     <br> 
+     <input type="radio" id="eee" name="branch1" value="EEE"> <label for="eee">EEE</label> 
+     <br> 
+    </div> 
+    <div class="sec1"> 
+     <p class="sec">Section:</p> 
+     <div class="sec12"> 
+      <input type="radio" id="a" name="sec" value="A"> <label for="a">A</label> 
+      <br> 
+      <input type="radio" id="b" name="sec" value="B"> <label for="b">B</label> 
+      <br> 
+      <input type="radio" id="c" name="sec" value="C"> <label for="c"> C </label> 
+     </div> 
+    </div> 
+   </fieldset> 
+   <div class="buttonbox"> 
+    <div class="button1"> 
+     <input type="button" class="button" value="Submit"> 
+    </div> 
+    <div class="button2"> 
+     <input type="button" class="button" value="Reset"> 
+    </div> 
+   </div> 
+  </form> 
+ 
+</body></html>
